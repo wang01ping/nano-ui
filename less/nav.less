@@ -1,0 +1,66 @@
+.tab-bar{
+    line-height: @header-height;
+
+    position: relative;
+
+    width: 100%;
+    height: @header-height;
+
+    background: @brand-danger;
+    .left-menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 45px;
+        height: @header-height;
+    }
+    .right-menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 45px;
+        height: @header-height;
+    }
+    .menu-icon{
+        font-size: 21px;
+
+        display: block;
+
+        height: @header-height;
+
+        cursor: pointer;
+        text-align: center;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, .15);
+
+        color: #fff;
+    }
+    .middle{
+        line-height: @header-height;
+
+        overflow: hidden;
+
+        height: @header-height;
+        margin: 0 45px;
+
+        text-align: center;
+
+        color: #fff;
+    }
+    &.bordered{
+        border-bottom: 1px solid darken(#f9523e, 5%);
+        .left-menu{
+            border-right: solid 1px darken(#f9523e, 5%);
+            .menu-icon{
+                border-right: solid 1px lighten(#f9523e, 5%);
+            }
+        }
+        .right-menu{
+            border-left: solid 1px darken(#f9523e, 5%);
+            .menu-icon{
+                border-left: solid 1px lighten(#f9523e, 5%);
+            }
+        }
+    }
+}

@@ -1,0 +1,176 @@
+//HOME PAGE
+html,body{
+	width:100%;
+	height: 100%;
+	overflow-x: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+html{
+	overflow-x: hidden;
+}
+
+body{
+	background: #f1f1f1;	
+}
+
+a{
+	color:#252525;
+}
+a:hover{
+	text-decoration: none;
+}
+
+
+
+
+.wrap{
+	position: relative;
+	width:100%;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+.page{
+	width:100%;
+	min-height: 100%;
+}
+
+.overlay{
+ 	position: absolute;
+	top:0;
+	left: 100%; 
+	background: rgba(255,255,255,1);
+	z-index: 100;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.main{
+	margin:45px 0 44px 0;
+}
+
+
+//header屏幕
+
+header{
+	//margin-top: 45px;
+	width:100%;
+	background: #f9523e;
+	.face{
+		padding:40px 0;
+		color:#fff;
+		.face-img{
+			width:80px;
+			height: 80px;
+			border-radius: 50%;
+			border:3px solid #fff;
+			margin: 0 auto;
+			overflow: hidden;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		h1{
+			margin-top:10px;
+			padding:5px 0;
+			text-align: center;
+			color:#fff;
+			font-weight: normal;
+		}
+		p{	
+			font-size: 14px;
+			padding:5px 0;
+			text-align: center;
+
+		}
+	}
+}
+
+
+//登录界面
+.login{
+	padding:10px;
+	h1{
+		font-size: 18px;
+		font-weight: 200;
+		line-height: 30px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.input-group{
+		position: relative;
+		width:100%;
+		.iconfont{
+			position: absolute;
+			top:0px;
+			left: 10px;
+			color:#888;
+			height: 100%;
+			line-height:40px;
+			background: #fff;
+		}
+	}
+	input{
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		height: 40px;		
+		margin-bottom: 10px;
+		padding:10px 10px 10px 35px;
+		background: #fff;
+		-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0 0 3px rgba(0,0,0,0.15);
+		-o-box-shadow: 0 0 3px rgba(0,0,0,0.15);
+		-ms-box-shadow: 0 0 3px rgba(0,0,0,0.15);
+		box-shadow: 0 0 3px rgba(0,0,0,0.15);
+	}
+	.tips{
+		margin-top:20px;
+		line-height: 24px;
+	}
+}
+
+//Home页面
+.shotcut{
+	padding:10px;
+	ul{
+		width: 100%;
+		li{
+			float: left;
+			width:25%;
+			a{
+				display: block;
+				padding:8px;
+				text-align: center;
+				overflow: hidden;
+				img{
+					border-radius: 8px;
+					display: block;
+				}
+				span{
+					display: block;
+					white-space: nowrap;
+					line-height: 18px;
+					font-size: 12px;
+					color:#666;
+				}
+
+			}
+
+		}
+	}
+}
+
+
+//安全状态
+.security-level{
+	padding-top: 20px;
+	.security-status{
+		line-height: 30px;
+		padding-bottom: 10px;
+	}
+}
+
+
+
+

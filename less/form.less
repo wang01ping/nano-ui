@@ -1,0 +1,149 @@
+input[type='radio'],
+input[type='checkbox']{
+    display: inline-block;
+
+    vertical-align: middle;
+}
+input[type='file']{
+    display: block;
+}
+
+input[type='range']{
+    display: block;
+
+    width: 100%;
+}
+input[type='text'],
+input[type='password'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='week'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+input[type='color'],
+textarea{
+    display: block;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    transition: box-shadow .45s, border-color .45s ease-in-out;
+
+    color: @gray-dark;
+    border: 1px solid @gray-light;
+    background-color: transparent;
+    //box-shadow: 0 0 2px rgba(0, 0, 0, .1);
+
+    -webkit-appearance: none;
+    &:focus{
+        outline: none;
+        box-shadow: 0 0 5px @gray-light;
+    }
+    &:readonly{
+        cursor: default;
+    }
+    &.error{
+        border: 1px solid @brand-danger;
+        outline: none;
+        box-shadow: 0 0 5px @brand-danger;
+    }
+    &.success{
+        border: 1px solid @brand-success;
+        outline: none;
+        box-shadow: 0 0 5px @brand-success;
+    }
+}
+
+//表单组
+.input-group{
+    position: relative;
+
+    width: 100%;
+    margin-bottom: 10px;
+    .ico{
+        line-height: 40px;
+
+        position: absolute;
+        top: 0;
+        left: 10px;
+
+        height: 100%;
+
+        color: #888;
+    }
+    input{
+        height: 40px;
+        padding: 10px 10px 10px 35px;
+    }
+}
+
+.form-group{
+    margin-bottom: 5px;
+
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+    .form-item{
+        line-height: 40px;
+
+        position: relative;
+
+        height: 40px;
+
+        border-bottom: 1px dotted #e0e0e0;
+        &:last-child{
+            border-bottom: none;
+        }
+        .label{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+
+            overflow: hidden;
+
+            width: 75px;
+            padding-left: 10px;
+
+            text-align: right;
+        }
+        input{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+
+            width: 100%;
+            padding-right: 10px;
+            padding-left: 85px;
+        }
+        .pull-right{
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            width: 20px;
+
+            color: #999;
+        }
+    }
+    .textarea-item{
+        .label{
+            line-height: 30px;
+
+            width: 75px;
+            height: 30px;
+            padding-left: 10px;
+
+            text-align: right;
+        }
+        textarea{
+            padding: 10px;
+        }
+    }
+}

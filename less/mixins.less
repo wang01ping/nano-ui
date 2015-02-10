@@ -1,0 +1,34 @@
+//清除浮动
+.clearfix() {
+    &:before, &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
+}
+//居中
+.center-block() {
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+//按钮
+.btn-variant(@color;@background) {
+    color: @color;
+    background-color: @background;
+    &:hover, &:focus, &:active, &.active {
+        color: @color;
+        background-color: darken(@background, 10%);
+    }
+    &.disabled, &[disabled] {
+        opacity: 0.35;
+	    &:hover, &:focus, &:active, &.active {
+	        background-color: @background;
+	    }
+    }
+}
+
+
