@@ -7,12 +7,13 @@
     height: @header-height;
 
     background: @brand-danger;
+    // box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
     .left-menu{
         position: absolute;
         top: 0;
         left: 0;
 
-        width: 45px;
+        width: 60px;
         height: @header-height;
     }
     .right-menu{
@@ -24,7 +25,7 @@
         height: @header-height;
     }
     .menu-icon{
-        font-size: 21px;
+        line-height: @header-height;
 
         display: block;
 
@@ -32,17 +33,24 @@
 
         cursor: pointer;
         text-align: center;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, .15);
 
         color: #fff;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, .15);
+        i{
+            font-size: 18px;
+            line-height: @header-height;
+
+            margin-right: 5px;
+        }
     }
     .middle{
+        font-size: 16px;
         line-height: @header-height;
 
         overflow: hidden;
 
         height: @header-height;
-        margin: 0 45px;
+        margin: 0 60px;
 
         text-align: center;
 

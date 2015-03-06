@@ -666,7 +666,7 @@ textarea.success {
   position: absolute;
   top: 0;
   left: 0;
-  width: 45px;
+  width: 60px;
   height: 45px;
 }
 .tab-bar .right-menu {
@@ -677,19 +677,25 @@ textarea.success {
   height: 45px;
 }
 .tab-bar .menu-icon {
-  font-size: 21px;
+  line-height: 45px;
   display: block;
   height: 45px;
   cursor: pointer;
   text-align: center;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
   color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+.tab-bar .menu-icon i {
+  font-size: 18px;
+  line-height: 45px;
+  margin-right: 5px;
 }
 .tab-bar .middle {
+  font-size: 16px;
   line-height: 45px;
   overflow: hidden;
   height: 45px;
-  margin: 0 45px;
+  margin: 0 60px;
   text-align: center;
   color: #fff;
 }
@@ -792,31 +798,55 @@ textarea.success {
   height: 50px;
   border-radius: 8px;
   margin: 0 auto;
-  background-image: url(../images/icons.jpg);
-  -webkit-background-size: 50px 400px;
-          background-size: 50px 400px;
+  background-image: url(../images/icons.png);
+  -webkit-background-size: 50px 800px;
+          background-size: 50px 800px;
   background-repeat: no-repeat;
 }
-.shotcut .shotcut-wrap ul li a .ico.ico-bus {
+.shotcut .shotcut-wrap ul li a .ico.ico-shbz {
   background-position: 0 0;
 }
-.shotcut .shotcut-wrap ul li a .ico.ico-metro {
+.shotcut .shotcut-wrap ul li a .ico.ico-gjj {
   background-position: 0 -50px;
 }
-.shotcut .shotcut-wrap ul li a .ico.ico-keche {
+.shotcut .shotcut-wrap ul li a .ico.ico-jhsy {
   background-position: 0 -100px;
 }
-.shotcut .shotcut-wrap ul li a .ico.ico-geshui {
+.shotcut .shotcut-wrap ul li a .ico.ico-hjsf {
   background-position: 0 -150px;
 }
-.shotcut .shotcut-wrap ul li a .ico.ico-shebao {
+.shotcut .shotcut-wrap ul li a .ico.ico-crj {
   background-position: 0 -200px;
 }
-.shotcut .shotcut-wrap ul li a .ico.ico-weizhang {
+.shotcut .shotcut-wrap ul li a .ico.ico-cljt {
   background-position: 0 -250px;
 }
-.shotcut .shotcut-wrap ul li a .ico.ico-huoche {
+.shotcut .shotcut-wrap ul li a .ico.ico-jypx {
   background-position: 0 -300px;
+}
+.shotcut .shotcut-wrap ul li a .ico.ico-tdfc {
+  background-position: 0 -350px;
+}
+.shotcut .shotcut-wrap ul li a .ico.ico-ldjy {
+  background-position: 0 -400px;
+}
+.shotcut .shotcut-wrap ul li a .ico.ico-yljk {
+  background-position: 0 -450px;
+}
+.shotcut .shotcut-wrap ul li a .ico.ico-zyzg {
+  background-position: 0 -500px;
+}
+.shotcut .shotcut-wrap ul li a .ico.ico-sfgz {
+  background-position: 0 -550px;
+}
+.shotcut .shotcut-wrap ul li a .ico.ico-shbs {
+  background-position: 0 -600px;
+}
+.shotcut .shotcut-wrap ul li a .ico.ico-qybs {
+  background-position: 0 -650px;
+}
+.shotcut .shotcut-wrap ul li a .ico.ico-qt {
+  background-position: 0 -700px;
 }
 .shotcut .shotcut-wrap ul li a span {
   white-space: nowrap;
@@ -854,12 +884,22 @@ textarea.success {
   padding: 0;
 }
 .list .list-item {
+  display: block;
   font-size: 16px;
   line-height: 40px;
   vertical-align: middle;
   height: 40px;
   padding: 5px 10px;
   border-bottom: 1px solid #e5e5e5;
+  color: #333333;
+}
+.list .list-item .fa {
+  line-height: 45px;
+  margin-right: 5px;
+  color: #777777;
+}
+.list .list-item:last-child {
+  border-bottom: none;
 }
 .service {
   margin: 0;

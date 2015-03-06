@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>本地宝诚信系统</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+	<!-- 顶部导航条 -->
+    <nav class="tab-bar fixed">
+        <div class="left-menu">
+            <a href="#" class="menu-icon"><i class="fa fa-angle-left"></i>返回</a>
+        </div>
+		<div class="middle">社会保障</div>
+        <div class="right-menu">
+            <a href="#" class="menu-icon">确定</a>
+        </div>
+    </nav>
+	<!-- 顶部导航条结束 -->
+
+	<section class="wrap-page has-header has-footer">
+
+		<!-- 当前页 -->
+		<div class="page page-active">
+			<div class="list" style="background:#eee">
+				<a href="" class="list-item">家政<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">维修<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">陪伴<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">汽车<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">保健<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">家政<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">维修<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">陪伴<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">汽车<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">保健<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">家政<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">维修<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">陪伴<i class="fa fa-angle-right pull-right"></i></a>
+			</div>
+		</div>
+		<!-- 当前页 -->
+
+		<!-- 上一页 -->
+		<div class="page page-prev">
+			2
+		</div>
+		<!-- 上一页 -->
+
+		<!-- 下一页 -->
+		<div class="page page-next">
+			<div class="list">
+				<a href="" class="list-item">家政<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">维修<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">陪伴<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">汽车<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">保健<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">家政<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">维修<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">陪伴<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">汽车<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">保健<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">家政<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">维修<i class="fa fa-angle-right pull-right"></i></a>
+				<a href="" class="list-item">陪伴<i class="fa fa-angle-right pull-right"></i></a>
+			</div>
+		</div>
+		<!-- 下一页 -->
+
+	</section>
+
+	<!-- 底部导航 -->
+ 	<footer class="footer">
+		<nav class="nav-footer">
+			<ul>
+				<li><a class="active" href=""><i class="fa fa-home"></i><span>首页</span></a></li>
+				<li><a href=""><i class="fa fa-pie-chart"></i><span>财务</span></a></a></li>
+				<li><a href=""><i class="fa fa-users"></i><span>用户</span></a></a></li>
+				<li><a href=""><i class="fa fa-comments-o"></i><span>消息</span></a></a></li>
+				<li><a href=""><i class="fa fa-paper-plane-o"></i><span>发布</span></a></a></li>
+			</ul>	
+		</nav>
+	</footer>
+	<!-- 底部导航结束 -->
+
+</body>
+
+<script>
+	$(function(){
+		$('.tab-bar').click(function(){
+			$('.page-active').removeClass('page-active').addClass('page-prev page-out');
+			$('.page-next').removeClass('page-next').addClass('page-active page-in');
+		})		
+	})
+</script>
+
+
+</html>
