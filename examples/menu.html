@@ -14,23 +14,18 @@
 
     <!-- nav -->
     <nav class="tab-bar fixed">
-        <div class="left-menu">
-            <a href="#" class="menu-icon"><i class="fa fa-angle-left"></i>返回</a>
-        </div>
-        <div class="middle">办事指南</div>
+
     </nav>
     <!-- /nav -->
 
     <section class="wrap-page has-header has-footer">
-        <header class="banner">
-            <div class="face">
-                <div class="face-img">
-                    <img src="images/face.jpg" width="100%" height="100%" alt="face">
-                </div>
-                <h1>小小菜</h1>
-                <p>ray0324@foxmail.com</p>
-            </div>
-        </header>
+        <div class="main">
+            <div class="input-group">
+                <i class="ico fa fa-search"></i>
+                <input type="search" name="username" id="username" placeholder="请输入帐号">
+            </div>      
+        </div>
+
         <section class="shotcut">
             <div class="shotcut-wrap">
                 <ul>
@@ -142,6 +137,22 @@
         </nav>
     </footer>
     <!-- 底部导航结束 -->
+
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+<script type="text/javascript" >
+    $(function() {
+      $('#slides').slidesjs({
+        width: 600,
+        height: 280,
+        navigation:false
+      });
+    });
+</script>
+
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 </body>
 

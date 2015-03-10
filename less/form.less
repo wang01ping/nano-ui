@@ -7,7 +7,6 @@ input[type='checkbox']{
 input[type='file']{
     display: block;
 }
-
 input[type='range']{
     display: block;
 
@@ -36,14 +35,16 @@ textarea{
     transition: box-shadow .45s, border-color .45s ease-in-out;
 
     color: @gray-dark;
-    border: 1px solid @gray-light;
-    background-color: transparent;
-    //box-shadow: 0 0 2px rgba(0, 0, 0, .1);
+    border: 1px solid @input-border-color;
+    // border:0;
+    background-color: #fff;
+    //background-color: transparent;
+    // box-shadow: 0 0 4px rgba(0, 0, 0, .15);
 
     -webkit-appearance: none;
     &:focus{
         outline: none;
-        box-shadow: 0 0 5px @gray-light;
+        // box-shadow: 0 0 5px @gray-light;
     }
     &:readonly{
         cursor: default;
@@ -60,34 +61,179 @@ textarea{
     }
 }
 
+.form-control{
+    line-height: 20px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
 //表单组
 .input-group{
     position: relative;
 
     width: 100%;
     margin-bottom: 10px;
-    .ico{
-        line-height: 40px;
+    i{
+        font-style: normal;
+        line-height: 20px;
 
         position: absolute;
-        top: 0;
-        left: 10px;
+        top: 1px;
 
-        height: 100%;
+        display: block;
+
+        height: 20px;
+        margin: 10px 0;
+
+        text-align: center;
 
         color: #888;
     }
     input{
+        line-height: 20px;
+
         height: 40px;
-        padding: 10px 10px 10px 35px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 35px;
+    }
+    &.prefix-icon{
+        i{
+            left: 10px;
+
+            width: 20px;
+            padding-right: 5px;
+
+            // border-right: 1px solid #e0e0e0;
+        }
+        input{
+            padding-left: 45px;
+            border:0;
+            box-shadow: 0 0 4px rgba(0, 0, 0, .15);
+            &:focus{
+                box-shadow: 0 0 5px @gray-light;
+            }
+        }
+    }
+    &.prefix-txt-1{
+        i{
+            left: 10px;
+
+            width: 20px;
+            padding-right: 5px;
+
+            border-right: 1px solid #e0e0e0;
+        }
+        input{
+            padding-left: 45px;
+        }
+    }
+    &.prefix-txt-2{
+        i{
+            left: 10px;
+
+            width: 40px;
+            padding-right: 5px;
+
+            border-right: 1px solid #e0e0e0;
+            font-size: 12px;
+        }
+        input{
+            padding-left: 65px;
+        }
+    }
+    &.prefix-txt-3{
+        i{
+            left: 10px;
+
+            width: 60px;
+            padding-right: 5px;
+            font-size: 12px;
+
+            border-right: 1px solid #e0e0e0;
+        }
+        input{
+            padding-left: 85px;
+        }
+    }
+    &.prefix-txt-4{
+        i{
+            left: 10px;
+
+            width: 80px;
+            padding-right: 5px;
+            font-size: 12px;
+
+            border-right: 1px solid #e0e0e0;
+        }
+        input{
+            padding-left: 105px;
+        }
+    }
+    &.suffix-txt-1{
+        i{
+            right: 10px;
+
+            width: 20px;
+            padding-left: 5px;
+
+            border-right: 1px solid #e0e0e0;
+        }
+        input{
+            padding-right: 45px;
+            padding-left: 10px;
+        }
+    }
+    &.suffix-txt-2{
+        i{
+            right: 10px;
+
+            width: 40px;
+            padding-left: 5px;
+
+            border-left: 1px solid #e0e0e0;
+        }
+        input{
+            padding-right: 65px;
+            padding-left: 10px;
+        }
+    }
+    &.suffix-txt-3{
+        i{
+            right: 10px;
+
+            width: 60px;
+            padding-left: 5px;
+
+            border-left: 1px solid #e0e0e0;
+        }
+        input{
+            padding-right: 85px;
+            padding-left: 10px;
+        }
+    }
+    &.suffix-txt-4{
+        i{
+            right: 10px;
+
+            width: 80px;
+            padding-left: 5px;
+
+            border-left: 1px solid #e0e0e0;
+        }
+        input{
+            padding-right: 105px;
+            padding-left: 10px;
+        }
     }
 }
-
 .form-group{
     margin-bottom: 5px;
 
     background: #fff;
-    box-shadow: 0 0 3px rgba(0,0,0,.2);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
     .form-item{
         line-height: 40px;
 

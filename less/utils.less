@@ -19,6 +19,7 @@
 .invisible {
     visibility: hidden;
 }
+
 //三角形
 .caret {
     display: inline-block;
@@ -30,6 +31,7 @@
     border-right: 6px solid transparent;
     border-left: 6px solid transparent;
 }
+
 //圆形点
 .circle {
     display: inline-block;
@@ -40,9 +42,18 @@
 }
 //倒圆角
 .radius {
-    -webkit-border-radius: @border-radius-sm;
-    -moz-border-radius: @border-radius-sm;
     border-radius: @border-radius-sm;
+}
+
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.spacer{
+    border-top: 1px dotted #e0e0e0;
+    margin:5px 0;
 }
 
 //圆圈
@@ -82,29 +93,44 @@
 .ft30 {
     font-size: 30px;
 }
-//-------------------------------------------------------------------
-//背景颜色
-.color-1 {
-    background: #6ec041;
+
+
+//颜色类
+
+.text-muted{
+    color:@gray-light !important;
 }
-.color-2 {
-    background: #f9c356;
+.text-primary{
+    color:@brand-primary !important;
 }
-.color-3 {
-    background: #fe864a;
+.text-success{
+    color:@brand-success !important;
 }
-.color-4 {
-    background: #ff687b;
+.text-info{
+    color:@brand-info !important;
 }
-.color-5 {
-    background: #fe8862;
+.text-warning{
+    color: @brand-warning !important;
 }
-.color-6 {
-    background: #42bde7;
+.text-danger{
+    color: @brand-danger !important;
 }
-.color-7 {
-    background: #7b7ad7;
+
+.bg-primary{
+    background-color:@brand-primary !important;
 }
-.color-8 {
-    background: #f9523e;
+.bg-success{
+    background-color:lighten(@brand-success, 30%) !important;
 }
+.bg-info{
+    background-color:lighten(@brand-info, 30%) !important;
+}
+.bg-warning{
+    background-color: lighten(@brand-warning, 30%) !important
+}
+.bg-danger{
+    background-color: lighten(@brand-danger, 30%) !important
+}
+
+
+

@@ -1,15 +1,23 @@
 .btn{
     line-height: 40px;
 
-    display: block;
+    display: inline-block;
 
-    width: 100%;
+    box-sizing: border-box;
     height: 40px;
+    padding: 0 10px;
 
     text-align: center;
+    cursor: pointer;
 
     border: none;
     box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+    &.btn-block{
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+    }
     &.btn-primary{
         .btn-variant(#fff;  @brand-primary);
     }
@@ -19,9 +27,24 @@
     &.btn-success{
         .btn-variant(#fff;@brand-success);
     }
+    &.btn-warning{
+        color: #fff;
+
+        .btn-variant(#fff;@brand-warning);
+    }
     &.btn-danger{
         color: #fff;
 
         .btn-variant(#fff;@brand-danger);
+    }
+    &.btn-sm{
+        line-height: 30px;
+
+        height: 30px;
+    }
+    &.btn-xs{
+        line-height: 20px;
+        height: 20px;
+        font-size: 12px;
     }
 }

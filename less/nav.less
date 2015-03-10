@@ -1,3 +1,4 @@
+.nav-bar,
 .tab-bar{
     line-height: @header-height;
 
@@ -21,7 +22,7 @@
         top: 0;
         right: 0;
 
-        width: 45px;
+        width: 60px;
         height: @header-height;
     }
     .menu-icon{
@@ -70,5 +71,11 @@
                 border-left: solid 1px lighten(#f9523e, 5%);
             }
         }
+    }
+    &.fixed{
+        position: fixed;
+        z-index: 1000;
+        top:0;
+        left:0;
     }
 }

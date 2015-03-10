@@ -1,3 +1,7 @@
+/**
+ * list-group
+ */
+/////////////////////////////////////////////////
 .list-group{
     font-size: 16px;
     font-weight: 200;
@@ -6,6 +10,9 @@
 
     background: #fff;
     box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+    &:last-child{
+        margin-bottom: 0;
+    }
     .list-item{
         line-height: 45px;
 
@@ -18,34 +25,46 @@
 
         color: @gray-darker;
         border-bottom: 1px dotted #e5e5e5;
-        .fa{
-            line-height: 45px;
+        &:last-child{
+            border-bottom: none;
+        }
+        &.small{
+            font-size: 13px;
+            line-height: 35px;
+
+            height: 35px;
+        }
+        i{
+            line-height: inherit;
 
             margin-right: 5px;
 
             color: @gray-dark;
         }
-        &:last-child{
-            border-bottom: none;
-        }
     }
 }
 
+
+/////////////////////////////////////////////////
+
+// 2
 .list{
+    padding: 0;
+
     list-style: none;
-    padding:0;
     .list-item{
-        display: block;
         font-size: 16px;
         line-height: 40px;
-        vertical-align: middle;
+
+        display: block;
 
         height: 40px;
         padding: 5px 10px;
 
-        border-bottom: 1px solid #e5e5e5;
-        color: @gray-dark;
+        vertical-align: middle;
 
+        color: @gray-dark;
+        border-bottom: 1px solid #e5e5e5;
         .fa{
             line-height: 45px;
 
@@ -53,25 +72,23 @@
 
             color: @gray-light;
         }
-
         &:last-child{
             border-bottom: none;
         }
-
     }
 }
 
-//服务列表
+//3
 .service{
-    margin:0;
+    margin: 0;
     padding: 10px 0;
     .s-list{
-        margin:0;
+        margin: 0;
         padding: 5px 10px;
 
         border-bottom: 1px solid #e0e0e0;
         dd{
-            margin:0;
+            margin: 0;
         }
         .title{
             font-size: 16px;
@@ -102,6 +119,129 @@
             font-size: 12px;
 
             color: #999;
+        }
+    }
+}
+
+// 4
+.list-pic-txt{
+    .list-item{
+        margin-bottom: 5px;
+        padding: 10px;
+
+        background: #fff;
+        box-shadow: 0 0 3px rgba(0, 0, 0, .15), 0 0 3px rgba(255, 255, 255, .5) inset;
+        // border-bottom: 1px dotted darken(#f9f9f9, 15%);
+        &:first-child{
+            border-top: none;
+        }
+        &:last-child{
+            margin-bottom: 0;
+
+            border-bottom: none;
+        }
+        img{
+            float: left;
+
+            width: 90px;
+            height: 60px;
+
+            border: none;
+            ~ dl{
+                margin-left: 100px;
+            }
+        }
+        dl{
+            height: 60px;
+            margin: 0;
+            dt{
+                overflow: hidden;
+
+                height: 40px;
+                margin: 0;
+                padding: 0;
+                a{
+                    font-size: 14px;
+                    font-weight: normal;
+                    line-height: 20px;
+
+                    text-decoration: none;
+
+                    color: #222;
+                    &:hover{
+                        color: @brand-danger;
+                    }
+                }
+            }
+            dd{
+                font-size: 11px;
+                line-height: 15px;
+
+                overflow: hidden;
+
+                height: 15px;
+                margin: 0;
+                padding: 5px 0 0;
+
+                color: #777;
+                i{
+                    margin-right: 3px;
+                }
+                span{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+// 5
+
+.list-pic-txt-b{
+    a{
+        display: block;
+
+        text-decoration: none;
+
+        color: inherit;
+        &:hover{
+            h2{
+                color: #f60;
+            }
+        }
+    }
+}
+
+.rec-item{
+    padding: 0 10px;
+
+    border-bottom: 1px solid darken(#f9f9f9, 15%);
+    &:first-child{
+        border-top: none;
+    }
+    &:last-child{
+        border-bottom: none;
+    }
+    h2{
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 22px;
+
+        overflow: hidden;
+
+        height: 22px;
+    }
+    p{
+        font-size: 12px;
+        line-height: 14px;
+
+        color: #999;
+        span{
+            line-height: 14px;
+
+            margin-right: 20px;
+
+            vertical-align: baseline;
         }
     }
 }

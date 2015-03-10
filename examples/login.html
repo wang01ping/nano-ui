@@ -10,7 +10,25 @@
 </head>
 <body>
 
+	<!-- 顶部导航条 -->
+    <nav class="tab-bar">
+        <div class="left-menu">
+            <a href="#" class="menu-icon"><i class="fa fa-angle-left"></i></a>
+        </div>
+		<div class="middle">登录</div>
+    </nav>
+	<!-- 顶部导航条结束 -->
+
+<!-- 
 	<header class="banner" >
+		<div class="face">
+			<div class="face-img">
+				<img src="images/face.jpg" width="100%" height="100%" alt="face">
+			</div>
+		</div>		
+	</header> -->
+
+	<header class="banner2" >
 		<div class="face">
 			<div class="face-img">
 				<img src="images/face.jpg" width="100%" height="100%" alt="face">
@@ -18,25 +36,28 @@
 		</div>		
 	</header>
 
+
 	<section class="login">
 
-		<h1>欢迎登录</h1>
+
 
 		<form action="">
 
-			<div class="input-group">
-				<i class="ico fa fa-user"></i>
+			<div class="input-group prefix-icon">
+				<i class="ico fa fa-user text-warning"></i>
 				<input type="text" name="username" id="username" placeholder="请输入帐号">
 			</div>
 
-			<div class="input-group">
-				<i class="ico fa fa-key"></i>
-				<input class="error" type="password" name="password" id="password" placeholder="请输入密码">
+			<div class="input-group prefix-icon">
+				<i class="ico fa fa-key text-info"></i>
+				<input type="password" name="password" id="password" placeholder="请输入密码">
 			</div>
 
 			<div class="check"><input type="checkbox" name="remember" id="rember"><label for="rember">记住密码</label></div>
 
-			<button class="btn btn-info">登　录</button>
+			<button class="btn btn-info btn-block">登　录</button>
+
+			<button class="btn btn-info btn-block"><i class="fa fa-spinner fa-pulse"></i></button>
 
 			<div class="tips ft12">
 				<p><a href="">无法登录？</a></p>
