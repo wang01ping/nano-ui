@@ -7,16 +7,32 @@
     height: 40px;
     padding: 0 10px;
 
-    text-align: center;
     cursor: pointer;
+    user-select: none;
+    transition: all;
+    transition-timing-function: linear;
+    transition-duration: .2s;
+    text-align: center;
 
     border: none;
     box-shadow: 0 0 3px rgba(0, 0, 0, .15);
     text-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+    &.btn-sm{
+        line-height: 30px;
+
+        height: 30px;
+    }
+    &.btn-xs{
+        font-size: 12px;
+        line-height: 20px;
+
+        height: 20px;
+    }
     &.btn-block{
         display: block;
-        margin-top: 10px;
+
         width: 100%;
+        margin-top: 10px;
     }
     &.btn-primary{
         .btn-variant(#fff;  @brand-primary);
@@ -37,14 +53,48 @@
 
         .btn-variant(#fff;@brand-danger);
     }
-    &.btn-sm{
-        line-height: 30px;
+    &.btn-primary-outline{
+        box-shadow: none;
 
-        height: 30px;
+        .btn-outline-variant(@brand-primary;  @brand-primary);
+        tex-shawod: none;
     }
-    &.btn-xs{
-        line-height: 20px;
-        height: 20px;
-        font-size: 12px;
+    &.btn-info-outline{
+        box-shadow: none;
+
+        .btn-outline-variant(@brand-info;  @brand-info);
+        tex-shawod: none;
+    }
+    &.btn-danger-outline{
+        box-shadow: none;
+
+        .btn-outline-variant(@brand-danger;  @brand-danger);
+        tex-shawod: none;
+    }
+}
+
+.btn-group{
+    position: relative;
+
+    display: inline-block;
+
+    vertical-align: middle;
+    > .btn{
+        position: relative;
+
+        float: left;
+    }
+}
+
+.btn-group-justified{
+    display: table;
+
+    width: 100%;
+
+    table-layout: fixed;
+    border-collapse: collapse;
+    > .btn{
+        display: table-cell;
+        float: none;
     }
 }

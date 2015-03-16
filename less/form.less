@@ -9,7 +9,6 @@ input[type='file']{
 }
 input[type='range']{
     display: block;
-
     width: 100%;
 }
 input[type='text'],
@@ -26,6 +25,7 @@ input[type='tel'],
 input[type='time'],
 input[type='url'],
 input[type='color'],
+select,
 textarea{
     display: block;
 
@@ -99,6 +99,11 @@ textarea{
         padding-bottom: 10px;
         padding-left: 35px;
     }
+    &.round{
+        input{
+            border-radius: 20px;
+        }
+    }
     &.prefix-icon{
         i{
             left: 10px;
@@ -170,6 +175,20 @@ textarea{
         }
         input{
             padding-left: 105px;
+        }
+    }
+    &.suffix-icon{
+        i{
+            right: 10px;
+
+            width: 20px;
+            padding-left: 5px;
+
+        }
+        input{
+            padding-left: 10px;
+            padding-right: 45px;
+            border:0;
         }
     }
     &.suffix-txt-1{

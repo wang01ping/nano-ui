@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>本地宝诚信系统</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+<body>
+	<!-- 顶部导航条 -->
+    <nav class="nav-bar fixed">
+        <div class="left-menu">
+            <a href="#" class="menu-icon"><i class="fa fa-angle-left"></i></a>
+        </div>
+		<div class="middle">首页</div>
+    </nav>
+	<!-- 顶部导航条结束 -->
+	<div class="page has-header has-footer">
+		<section class="main">
+			<div class="search-box input-group suffix-icon">
+				<i class="fa fa-search text-info"></i>
+				<input type="search" class="form-control"  style="border:0" name="" id="">
+			</div>
+			<div class="slider-wrap">
+			    <div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide"><img src="images/slider.jpg" class="img-responsive" alt="img"></div>
+			            <div class="swiper-slide"><img src="images/slider.jpg" class="img-responsive" alt="img"></div>
+			            <div class="swiper-slide"><img src="images/slider.jpg" class="img-responsive" alt="img"></div>
+			            <div class="swiper-slide"><img src="images/slider.jpg" class="img-responsive" alt="img"></div>
+			            <div class="swiper-slide"><img src="images/slider.jpg" class="img-responsive" alt="img"></div>
+			        </div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination swiper-pagination-white"></div>
+			    </div>
+			</div>
+		</section>		
+	</div>
+
+
+
+    <!-- 底部导航 -->
+    <footer class="footer">
+        <nav class="nav-footer">
+            <ul>
+                <li><a class="active" href=""><i class="fa fa-home"></i><span>首页</span></a></li>
+                <li><a href=""><i class="fa fa-pie-chart"></i><span>财务</span></a></a></li>
+                <li><a href=""><i class="fa fa-users"></i><span>用户</span></a></a></li>
+                <li><a href=""><i class="fa fa-comments-o"></i><span>消息</span></a></a></li>
+                <li><a href=""><i class="fa fa-paper-plane-o"></i><span>发布</span></a></a></li>
+            </ul>   
+        </nav>
+    </footer>
+    <!-- 底部导航结束 -->
+
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        paginationClickable: true
+	    });
+    </script>
+
+</body>
+</html>

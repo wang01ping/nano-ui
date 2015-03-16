@@ -1,52 +1,14 @@
-#slides{
-    // padding:0 10px;
-    display: none;
-    .slide-wrap{
+    .swiper-container {
+        width: 100%;
+        overflow: hidden;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
         img{
-            position: relative;
-            width:100%;
-            height: 100%;
-        }
-        span{
-            display: block;
-            padding:0 10px;
-            height: 36px;
-            line-height: 36px;
-            background: rgba(255, 255, 255,.5);
-            color:#f9523e;
-            font-weight: bold;
-            font-size: 14px;
-            position: absolute;
-            bottom:0;
-            left: 0;
-            right: 0;
+          display: block;
+          margin:0;
+          padding:0;
         }
     }
-}
-
-.slidesjs-pagination {
-  margin: 6px 0 0;
-  float: right;
-  list-style: none;
-  li{
-      float: left;
-      margin: 0 1px;
-      a{
-          display: block;
-          width: 6px;
-          height: 0;
-          padding-top: 6px;
-          background-image: url(../images/pagination.png);
-          background-size: 6px 18px;
-          background-position: 0 0;
-          float: left;
-          overflow: hidden;
-          &.active,&:hover.active{
-            background-position: 0 -6px;
-          }
-          &:hover{
-            background-position: 0 -12px;
-          }
-      }
-  }
-}
