@@ -10,14 +10,14 @@
 }
 //居中
 .center-block() {
-    display:block;
-    margin-right:auto;
-    margin-left:auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
-
 //按钮
 .btn-variant(@color;@background) {
     color: @color;
+    border: 1px solid @background;
     background-color: @background;
     &:hover, &:focus, &:active, &.active {
         color: @color;
@@ -25,12 +25,11 @@
     }
     &.disabled, &[disabled] {
         opacity: 0.35;
-	    &:hover, &:focus, &:active, &.active {
-	        background-color: @background;
-	    }
+        &:hover, &:focus, &:active, &.active {
+            background-color: @background;
+        }
     }
 }
-
 .btn-outline-variant(@color;@background) {
     color: @color;
     border: 1px solid @background;
